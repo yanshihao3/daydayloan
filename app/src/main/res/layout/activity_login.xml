@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:src="@mipmap/iv_black_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@mipmap/logo" />
+
+        <com.day.loan.view.PowerfulEditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/icon_et_bg"
+            android:drawableLeft="@mipmap/icon_phone"
+            android:drawablePadding="15dp"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:lines="1"
+            android:maxLength="11"
+            android:paddingBottom="8dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColorHint="@color/gay"
+            android:textSize="15sp"
+            app:funcType="canClear"
+            app:leftDrawableHeight="20dp"
+            app:leftDrawableWidth="20dp"
+            app:theme="@style/MyEditText" />
+
+        <RelativeLayout
+            android:id="@+id/layout_Result"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/icon_et_bg"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8dp"
+                android:src="@mipmap/icon_result" />
+
+            <ImageView
+                android:id="@+id/verify_iv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/et_Result"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@id/verify_iv"
+                android:layout_toRightOf="@id/result"
+                android:background="@null"
+                android:hint="请输入结果"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="3"
+                android:paddingBottom="8dp"
+                android:textColorHint="@color/gay"
+                android:textSize="15sp"
+                android:theme="@style/MyEditText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_code"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:visibility="gone">
+
+            <com.day.loan.view.PowerfulEditText
+                android:id="@+id/ed_code"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/icon_et_bg"
+                android:drawableLeft="@mipmap/icon_pw"
+                android:drawablePadding="15dp"
+                android:hint="验证码"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="6"
+                android:paddingBottom="8dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textColorHint="@color/gay"
+                android:textSize="15sp"
+                app:funcType="canWatchPwd"
+                app:leftDrawableHeight="20dp"
+                app:leftDrawableWidth="20dp"
+                app:theme="@style/MyEditText" />
+
+            <Button
+                android:id="@+id/bt_code"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/bg"
+                android:text="获取验证码"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <com.day.loan.view.SuperButton
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:enabled="false"
+            android:text="立即登录"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:sCornersRadius="12dp"
+            app:sSelectorDisableColor="@color/theme_color"
+            app:sSelectorNormalColor="@color/theme_color"
+            app:sSelectorPressedColor="@color/theme_color"
+            app:sUseSelector="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:text="贷款，投资你的明天"
+        android:textColor="@color/gay"
+        android:textSize="18sp" />
+</RelativeLayout>

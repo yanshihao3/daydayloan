@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="theme_color">#d80d18</color>
+
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="divider_background">#EEEEEE</color>
+
+    <color name="main">#0f97ff</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+
+    <color name="colorPrimary1">#03A9F4</color>
+    <color name="colorPrimaryDark1">#0288D1</color>
+    <color name="colorAccent1">#FF4081</color>
+
+
+    <color name="window_background">#FFF5F5F5</color>
+
+    <color name="base_white">#f2f3f5</color>
+    <color name="color_f4">#f4f4f4</color>
+    <color name="select_text_color">#333333</color>
+    <color name="text_setting">#666666</color>
+    <color name="tag_textcolor">#666666</color>
+
+
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="nav_bg_color">#63b953</color>
+
+    <color name="status">#03A9F4</color>
+    <color name="dispress_color">#97c0ed</color>
+    <color name="press_color">#0867d1</color>
+</resources>

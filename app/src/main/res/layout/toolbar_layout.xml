@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:elevation="0.1dp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/theme_color"
+        app:contentInsetStart="0dp"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:src="@mipmap/iv_black_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

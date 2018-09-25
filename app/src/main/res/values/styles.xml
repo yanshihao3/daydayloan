@@ -1,0 +1,186 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!--去掉边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--不需要标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--允许模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--全屏幕-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/load</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppTheme.Splash">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="MainRadioButtonTheme" parent="Widget.AppCompat.CompoundButton.RadioButton">
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:button">@null</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@drawable/sel_main_rb_text_color</item>
+</style>
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/primary</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+        <item name="android:colorButtonNormal">@color/primary_darker</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/iron</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+
+    <style name="pop_animation">
+
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+
+    </style>
+
+
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/gay</item>
+        <item name="colorControlActivated">@color/gay</item>
+    </style>
+    <style name="CheckTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">@color/gay</item>
+        <item name="colorControlActivated">@color/theme_color</item>
+    </style>
+    <style name="Base_AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+
+        <!--不设置在6.0以上会出现，宽度不充满屏幕的情况-->
+        <item name="windowMinWidthMinor">90%</item>
+
+        <!-- 取消标题栏，如果在代码中settitle的话会无效 -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- 标题的和Message的文字颜色 -->
+        <!--<item name="android:textColorPrimary">@color/black</item>-->
+
+        <!-- 修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <!--<item name="android:topDark">@color/app_main_color_deep</item>-->
+
+        <!--<item name="android:background">@color/white</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- 在某些系统上面设置背景颜色之后出现奇怪的背景，处这里设置背景为透明，为了隐藏边框 -->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+
+        <!-- 进入和退出动画，左进右出（系统自带） -->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>-->
+
+        <!-- 按钮字体颜色,全部一起改，单个改需要在Java代码中修改 -->
+        <!-- <item name="colorAccent">@color/app_main_color</item>-->
+    </style>
+
+
+    <style name="BannerDefaultStyle">
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">3000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">#44aaaaaa</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">10sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+    </style>
+    <style name="UpdateAppDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowEnterAnimation">@anim/update_app_window_in</item>
+        <item name="android:windowExitAnimation">@anim/update_app_window_out</item>
+    </style>
+    <style name="UpdateAppNumberProgressBar_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#e94339</item>
+
+        <item name="progress_text_size">12sp</item>
+        <item name="progress_text_color">#e94339</item>
+
+        <item name="progress_reached_bar_height">4dp</item>
+        <item name="progress_unreached_bar_height">3dp</item>
+    </style>
+</resources>

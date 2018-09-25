@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/item_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/logo" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            tools:text="民生钱包" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/item_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            tools:text="民生钱包" />
+    </LinearLayout>
+
+    <com.flyco.labelview.LabelView
+        android:id="@+id/item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:lv_background_color="#D80D18"
+        app:lv_gravity="TOP_RIGHT"
+        app:lv_padding="2dp"
+        app:lv_text="热门推荐"
+        app:lv_text_color="#FFFFFF"
+        app:lv_text_size="9sp" />
+</RelativeLayout>

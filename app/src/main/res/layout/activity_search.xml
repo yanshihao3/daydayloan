@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_color"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingBottom="10dp"
+            app:searchIcon="@mipmap/search_icon"
+            android:paddingEnd="50dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@drawable/serchview_bg"
+            app:queryHint="请输入搜索内容"
+            tools:ignore="RtlSymmetry">
+
+        </android.support.v7.widget.SearchView>
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:paddingEnd="14dp"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:src="@mipmap/iv_black_back" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="热门推荐"
+        android:textColor="@color/red_f3323b"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

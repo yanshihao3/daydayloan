@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/home_product_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:src="@mipmap/logo" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toLeftOf="@id/home_product_rate"
+        android:layout_toRightOf="@id/home_product_logo"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/home_product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            tools:text="老张有钱" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预计可借"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/home_product_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E86947"
+                android:textSize="13sp"
+                tools:text="100-1000元" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/home_product_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            tools:text="老张有钱" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/home_product_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E86947"
+                android:textSize="10sp"
+                tools:text="老张有钱" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人申请·"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/home_product_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E86947"
+                android:textSize="10sp"
+                tools:text="老张有钱" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="放款"
+                android:textColor="#666666"
+                android:textSize="10sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/home_product_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:textColor="#E8613A"
+        android:textSize="16sp"
+        tools:text="0.010%/日" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">天天借款</string>
+
+    <string name="appName">天天借款</string>
+
+    <string name="error">网络错误</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="net_error">网络请求失败</string>
+
+    <string name="captcha_btn_resend">重发验证码</string>
+    <string name="validate_btn_hint">获取验证码</string>
+    <string name="password_check">请输入6-20位密码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="perfect_title">── 完善信息, 您可以获得更多贷款 ──</string>
+    <string name="insurance">立即领取免费保险</string>
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+    <string name="hint_feedback">请输入你的问题, 工作人员会尽快联系并恢复您的问题（限150字以内）</string>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context=".fragment.MyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_my_background">
+
+        <TextView
+            android:id="@+id/my_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_photo"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/my_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_edit"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/my_progess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_progess"
+            android:gravity="center"
+            android:text="贷款进度"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/my_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_mianxi"
+            android:gravity="center"
+            android:text="我的免息卷"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:clickable="true"
+
+            android:id="@+id/my_setting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_setting"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:clickable="true"
+
+            android:id="@+id/my_problem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_yijian"
+            android:gravity="center"
+            android:text="问题反馈"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:clickable="true"
+
+            android:id="@+id/my_safe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/ic_my_anquan"
+            android:gravity="center"
+            android:text="安全小贴士"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

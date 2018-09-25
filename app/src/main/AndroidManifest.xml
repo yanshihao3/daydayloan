@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.day.loan">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.GuideActivity" />
+        <activity android:name=".activity.CareerChoiceActivity" />
+        <activity android:name=".activity.HtmlActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.DownAPKService" />
+        <service android:name=".update.DownloadService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.DetailsActivity" />
+        <activity android:name=".activity.AboutActivity"></activity>
+        <activity android:name=".activity.FeedbackActivity" />
+
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.EmptyActivity" />
+    </application>
+
+</manifest>
